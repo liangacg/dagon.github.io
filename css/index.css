@@ -1,0 +1,17 @@
+.logo img{
+	width: 100%;
+}
+.nav div a{
+	font-size: 25px;
+	line-height: .9;
+}
+.nav a .e{
+	font-size: 20px;
+	color: #b60303;
+}
+.nav div a:hover{
+	color: #b60303;
+}
+.nav a .e:hover{
+	color: #000;
+}
