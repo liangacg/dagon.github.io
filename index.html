@@ -2,30 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script type="text/javascript" src="https://cdn.bootcss.com/vue/2.6.10/vue.common.dev.js"></script>
-	<title>1.2</title>
+	<title>Welcome</title>
 </head>
-<style>
-.class1{
-  background: #444;
-  color: #eee;
-}
-</style>
 <body>
-	<div id="app">
-  <label for="r1">修改颜色</label><input type="checkbox" v-model="use" id="r1">
-  <br><br>
-  <div v-bind:class="{'class1': use}">
-    v-bind:class 指令
-  </div>
-</div>
-<script type="text/javascript">
-    new Vue({
-    el: '#app',
-  data:{
-      use: false
-  }
-});
-</script>
+	<div class="nav">
+		<ul>
+			<li><a href="index.html"></a>首页</li>
+			<li><a href="log.html"></a>更新</li>
+		</ul>
+	</div>
+</body>
 </body>
 </html>
