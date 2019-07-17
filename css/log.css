@@ -26,6 +26,9 @@
 .nav a:hover .e{
 	color: #000;
 }
+.content span{
+	color: #b60303;
+}
 .row .content{
 	padding: 20px;
 	box-shadow: 0px 8px 15px rgba(0,0,0,0.5);
