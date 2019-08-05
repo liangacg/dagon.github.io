@@ -33,5 +33,6 @@ $(document).ready(function(){
             }
         }
     }
+    colorChange()
     setInterval(main, 100);
 });
