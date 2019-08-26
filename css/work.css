@@ -1,0 +1,42 @@
+.allBox{
+	background:linear-gradient(to left,#efffe9,#2ec4b6);
+}
+.logo{
+	margin-top: -30px;
+}
+.logo img{
+	width: 30%;
+}
+.nav div a{
+	font-size: 1.5em;
+	line-height: .9;
+}
+.nav a .e{
+	font-size: .8em;
+	color: #b60303;
+	margin-top: -15px;
+}
+.nav a p{
+	white-space:nowrap;
+}
+.nav a{
+	padding-top: 2em;
+	font-size: 1.5em;
+}
+.nav a:hover p{
+	color: #b60303;
+}
+.nav a:hover .e{
+	color: #000;
+}
+.bg{
+	background-size:33%;
+}
+.footer{
+	margin-top: 26%;
+}
+@media screen and (max-width: 576px) {
+    .bg{
+	background: none;
+	}
+}
