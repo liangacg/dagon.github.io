@@ -6,25 +6,33 @@
 	<script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
 </head>
 <body>
-	<div id="vue_det">
-    <h1>site : {{site}}</h1>
-    <h1>url : {{url}}</h1>
-    <h1>{{details()}}</h1>
+<div id="ddd" >
+  <div >
+    <dos v-for="post in posts" v-bind:post="post" :style="{ fontSize: postFontSize + 'em' }" v-on:enlarge-text="postFontSize += 0.1" v-bind:postFontSize="postFontSize">
+    </dos>
+  </div>
 </div>
-<script type="text/javascript">
-    var aaa = new Vue({
-        el: '#vue_det',
-        data: {
-            site: "菜鸟教程",
-            url: "www.runoob.com",
-            alexa: "10000"
-        },
-        methods: {
-            details: function() {
-                return  this.site + " - 学的不仅是技术，更是梦想！";
-            }
-        }
-    })
+<script>
+Vue.component('dos', {
+  props: ['post',"postFontSize"],
+  template: `
+ 	<div>
+		<h3>{{post.title}}</h3>
+		<button :style="{ fontSize: postFontSize + 'em' }" v-on:click="$emit('enlarge-text')"> change</button>
+ 	</div>
+  `
+});
+new Vue({
+  el: '#ddd',
+  data: {
+    posts: [
+    	{ id: 1, title: 'My journey with Vue' },
+    	{ id: 2, title: 'Blogging with Vue' },
+      	{ id: 3, title: 'Why Vue is so fun' }],
+    postFontSize: 2
+  }
+});
+
 </script>
 </body>
 </html>
